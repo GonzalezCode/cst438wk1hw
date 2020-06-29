@@ -26,6 +26,7 @@ public class Post {
     @NotNull
     @Size(min=1,max=5)
     private String rating;
+    // since this is a number, should it be an int instead?
 
     private String date;
 
