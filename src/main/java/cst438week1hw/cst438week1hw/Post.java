@@ -25,7 +25,7 @@ public class Post {
     private String name;
     @NotNull
     @Size(min=1,max=5)
-    private String rating;
+    private int rating;
     // since this is a number, should it be an int instead?
 
     private String date;
@@ -35,7 +35,7 @@ public class Post {
         this.date = LocalDateTime.now().format(formatter);
     }
 
-    public Post(String name, String title, String rating){
+    public Post(String name, String title, int rating){
         super();
         this.name = name;
         this.title = title;
@@ -67,11 +67,11 @@ public class Post {
         this.name = name;
     }
 
-    public String getRating() {
+    public int getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(int rating) {
         this.rating = rating;
     }
 
