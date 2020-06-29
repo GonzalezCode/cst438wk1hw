@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmls:th="www.thymeleaf.org" xmlns:xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+</head>
+<body>
+<a href="/post/new">Add a post</a>
+</br>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Rating</th>
+        <th>Date</th>
+    </tr>
+    <tr th:each="post : ${posts}">
+        <td th:text="${post.name}"></td>
+        <td th:text="${post.title}"></td>
+        <td th:text="${post.rating}"></td>
+        <td th:text="${post.date}"></td>
+    </tr>
+</table>
+</body>
+</html>

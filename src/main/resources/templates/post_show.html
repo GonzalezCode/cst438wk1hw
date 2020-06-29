@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmls:th="www.thymeleaf.org" xmlns:xmls="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+<body>
+<h2 th:inline="text">Thanks [[${post.name}]].</h2>
+
+Name: <span th:inline="text"> [[${post.name}]] </span></br>
+Movie Title: <span th:inline="text"> [[${post.title}]] </span></br>
+Rating: <span th:inline="text"> [[${post.rating}]] </span></br>
+Date: <span th:inline="text"> [[${post.date}]] </span></br>
+</body>
+</html>
